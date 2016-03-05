@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 80b6a06c61dbd4f23af45d03c928f477
-timeCreated: 1457139875
+guid: cc66f37e6a58946079b6e2a0cdec0734
+timeCreated: 1457187622
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ZombieType1_0
-    21300002: ZombieType1_1
-    21300004: ZombieType1_2
-    21300006: ZombieType1_3
+    21300000: ZombieType3_0
+    21300002: ZombieType3_1
+    21300004: ZombieType3_2
+    21300006: ZombieType3_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -54,7 +54,7 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: ZombieType1_0
+    - name: ZombieType3_0
       rect:
         serializedVersion: 2
         x: 0
@@ -71,7 +71,7 @@ TextureImporter:
         - {x: -10, y: -16}
         - {x: 12, y: -16}
         - {x: 12, y: 16}
-    - name: ZombieType1_1
+    - name: ZombieType3_1
       rect:
         serializedVersion: 2
         x: 32
@@ -89,7 +89,7 @@ TextureImporter:
         - {x: 12, y: -16}
         - {x: 12, y: 10}
         - {x: 10, y: 16}
-    - name: ZombieType1_2
+    - name: ZombieType3_2
       rect:
         serializedVersion: 2
         x: 64
@@ -108,7 +108,7 @@ TextureImporter:
         - {x: 12, y: -16}
         - {x: 12, y: 10}
         - {x: 11, y: 16}
-    - name: ZombieType1_3
+    - name: ZombieType3_3
       rect:
         serializedVersion: 2
         x: 96

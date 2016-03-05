@@ -15,9 +15,9 @@ public class Bullet: MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (verifyPowerShootActivated ()) {
-			setPowerShoot();
-		}
+//		if (verifyPowerShootActivated ()) {
+//			setPowerShoot();
+//		}
 	}
 	
 	// Update is called once per frame
@@ -66,12 +66,12 @@ public class Bullet: MonoBehaviour {
 		if(coll.gameObject.tag == "Zombie")
 		{
 			coll.gameObject.SendMessage("takeDamage", this.damage);
-			if(verifyDrillShootActivated() == false) {
+//			if(verifyDrillShootActivated() == false) {
 				Destroy(this.gameObject);
-			}
-			else {
-				Physics2D.IgnoreCollision(coll.collider, GetComponent<Collider2D>());
-			}
+//			}
+//			else {
+//				Physics2D.IgnoreCollision(coll.collider, GetComponent<Collider2D>());
+//			}
 		}
 	}
 
