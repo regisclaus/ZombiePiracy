@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 using Parse;
 using System.Threading.Tasks;
+using UnityEngine.SceneManagement;
 
 public class RankingControler : MonoBehaviour {
 
@@ -34,7 +35,7 @@ public class RankingControler : MonoBehaviour {
 	}
 
 	public void restartGame () {
-		Application.LoadLevel("WelcomeSetupScene");
+		SceneManager.LoadScene("WelcomeSetupScene");
 	}
 	
 }

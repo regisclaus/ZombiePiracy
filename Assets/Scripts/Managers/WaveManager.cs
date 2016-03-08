@@ -11,6 +11,10 @@ public class WaveManager : MonoBehaviour {
 
 	public Wave[] waves;
 
+	public GameManager gameManager;
+
+	private bool allZombiesRespawned = false;
+
 	// Use this for initialization
 	void Start () {
 		StartCoroutine ("respawn");
@@ -18,7 +22,7 @@ public class WaveManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+		verifyAllZombiesKilled ();
 	}
 
 	IEnumerator respawn() {
@@ -34,6 +38,16 @@ public class WaveManager : MonoBehaviour {
 				Instantiate (zombies[wave.types[j]], zombiesRespawns [position].position, Quaternion.identity);
 			}
 			yield return new WaitForSeconds(COOLDOWN_TIMER);
+		}
+		allZombiesRespawned = true;
+	}
+
+	private void verifyAllZombiesKilled () {
+		if (allZombiesRespawned) {
+			if(GameObject.FindObjectsOfType<Zombie> ().Length == 0) {
+				gameManager.victoryGame ();
+				Destroy (this.gameObject);
+			}
 		}
 	}
 

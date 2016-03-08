@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using Parse;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
@@ -9,6 +10,7 @@ public class GameManager : MonoBehaviour {
 
 	public GameObject gameOverModal;
 	public GameObject pausedModal;
+	public GameObject victoryModal;
 
 	// Use this for initialization
 	void Start () {
@@ -52,19 +54,26 @@ public class GameManager : MonoBehaviour {
 
 	}
 
+	public void victoryGame () {
+		pauseTime ();
+		victoryModal.SetActive (true);
+		gameOvered = true;
+		saveCoinsCollected();
+	}
+
 	public void restartGame () {
 		unPauseGame ();
-		Application.LoadLevel("TropicalStageScene");
+		SceneManager.LoadScene("TropicalStageScene");
 	}
 
 	public void rankingGame () {
 		unPauseGame ();
-		Application.LoadLevel("RankingScene");
+		SceneManager.LoadScene("RankingScene");
 	}
 
 	public void exitGame() {
 		unPauseGame ();
-		Application.LoadLevel("WelcomeSetupScene");
+		SceneManager.LoadScene("WelcomeSetupScene");
 	}
 
 	public void pauseGame() {

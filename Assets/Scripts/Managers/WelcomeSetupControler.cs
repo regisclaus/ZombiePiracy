@@ -3,6 +3,7 @@ using System.Collections;
 using Parse;
 using UnityEngine.UI;
 using System.Threading.Tasks;
+using UnityEngine.SceneManagement;
 
 public class WelcomeSetupControler : MonoBehaviour {
 
@@ -164,11 +165,11 @@ public class WelcomeSetupControler : MonoBehaviour {
 	}
 
 	public void play () {
-		Application.LoadLevel("MainGame");
+		SceneManager.LoadScene("MainGame");
 	}
 
 	public void rankingGame () {
-		Application.LoadLevel("RankingScene");
+		SceneManager.LoadScene("RankingScene");
 	}
 	
 
