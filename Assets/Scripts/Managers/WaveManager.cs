@@ -5,9 +5,9 @@ public class WaveManager : MonoBehaviour {
 
 	public Transform[] zombiesRespawns;
 
-	public int START_DELAY_TIME = 5;
+	public float START_DELAY_TIME = 5;
 
-	private int COOLDOWN_TIMER = 2;
+	public float COOLDOWN_TIMER = 2;
 
 	public Zombie[] zombies;
 
@@ -45,7 +45,7 @@ public class WaveManager : MonoBehaviour {
 				positionsSelected [position] = true;
 				Instantiate (zombies[wave.types[j]], zombiesRespawns [position].position, Quaternion.identity);
 			}
-			yield return new WaitForSeconds(COOLDOWN_TIMER);
+			yield return new WaitForSeconds(wave.intervalTime);
 		}
 		allZombiesRespawned = true;
 	}
@@ -73,4 +73,5 @@ public class WaveManager : MonoBehaviour {
 [System.Serializable]
 public class Wave {
 	public int[] types;
+	public int intervalTime;
 }
