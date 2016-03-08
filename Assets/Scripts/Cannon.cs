@@ -66,8 +66,8 @@ public class Cannon : MonoBehaviour {
 
 	private void shootAnimation() {
 		animator.SetTrigger("Shoot");
-		pirate.animateShotting ();
-		crate.GetComponent<Animator> ().SetTrigger ("Shoot");
+		//pirate.animateShotting ();
+		//crate.GetComponent<Animator> ().SetTrigger ("Shoot");
 	}
 
 

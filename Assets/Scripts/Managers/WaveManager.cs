@@ -5,6 +5,8 @@ public class WaveManager : MonoBehaviour {
 
 	public Transform[] zombiesRespawns;
 
+	public int START_DELAY_TIME = 5;
+
 	private int COOLDOWN_TIMER = 2;
 
 	public Zombie[] zombies;
@@ -17,12 +19,18 @@ public class WaveManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine ("respawn");
+		StartCoroutine ("startDelayToRespawn");
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		verifyAllZombiesKilled ();
+
+	}
+
+	IEnumerator startDelayToRespawn() {
+		yield return new WaitForSeconds(START_DELAY_TIME);
+		StartCoroutine ("respawn");
 	}
 
 	IEnumerator respawn() {

@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 80b6a06c61dbd4f23af45d03c928f477
-timeCreated: 1457139875
+guid: ddc9dff5d32cb4c449bbc3def8d6db59
+timeCreated: 1457448480
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ZombieType1_0
-    21300002: ZombieType1_1
-    21300004: ZombieType1_2
-    21300006: ZombieType1_3
+    21300000: SeaAnimated_0
+    21300002: SeaAnimated_1
+    21300004: SeaAnimated_2
+    21300006: SeaAnimated_3
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -48,85 +48,56 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 70
+  spritePixelsToUnits: 100
   alphaIsTransparency: 1
   textureType: 8
   buildTargetSettings: []
   spriteSheet:
     sprites:
-    - name: ZombieType1_0
+    - name: SeaAnimated_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 7
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 16}
-        - {x: -15, y: 11}
-        - {x: -15, y: -8}
-        - {x: -10, y: -16}
-        - {x: 12, y: -16}
-        - {x: 12, y: 16}
-    - name: ZombieType1_1
+      outline: []
+    - name: SeaAnimated_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 9
         y: 0
-        width: 32
-        height: 32
+        width: 5
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -5, y: 16}
-        - {x: -16, y: 8}
-        - {x: -16, y: -7}
-        - {x: -8, y: -16}
-        - {x: 12, y: -16}
-        - {x: 12, y: 10}
-        - {x: 10, y: 16}
-    - name: ZombieType1_2
+      outline: []
+    - name: SeaAnimated_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 18
         y: 0
-        width: 32
-        height: 32
+        width: 6
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: -8, y: 16}
-        - {x: -16, y: 12}
-        - {x: -16, y: -3}
-        - {x: -13, y: -4}
-        - {x: -3, y: -16}
-        - {x: 12, y: -16}
-        - {x: 12, y: 10}
-        - {x: 11, y: 16}
-    - name: ZombieType1_3
+      outline: []
+    - name: SeaAnimated_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 27
         y: 0
-        width: 32
-        height: 32
+        width: 7
+        height: 160
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 11, y: 16}
-        - {x: -7, y: 16}
-        - {x: -15, y: 12}
-        - {x: -15, y: -6}
-        - {x: -5, y: -16}
-        - {x: 10, y: -16}
-        - {x: 12, y: -14}
-        - {x: 12, y: 15}
+      outline: []
     outline: []
   spritePackingTag: 
   userData: 
