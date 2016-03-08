@@ -73,5 +73,5 @@ public class WaveManager : MonoBehaviour {
 [System.Serializable]
 public class Wave {
 	public int[] types;
-	public int intervalTime;
+	public float intervalTime;
 }
