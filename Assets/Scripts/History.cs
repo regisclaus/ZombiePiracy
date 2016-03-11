@@ -26,6 +26,6 @@ public class History : MonoBehaviour {
 	}
 
 	public void skipHistory () {
-		SceneManager.LoadScene ("TropicalStageScene");
+		SceneManager.LoadScene ("TropicalScenarioScene");
 	}
 }

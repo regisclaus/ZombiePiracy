@@ -63,7 +63,7 @@ public class GameManager : MonoBehaviour {
 
 	public void restartGame () {
 		unPauseGame ();
-		SceneManager.LoadScene("TropicalStageScene");
+		SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 	}
 
 	public void rankingGame () {
@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour {
 
 	public void exitGame() {
 		unPauseGame ();
-		SceneManager.LoadScene("WelcomeSetupScene");
+		SceneManager.LoadScene("ShipScene");
 	}
 
 	public void pauseGame() {

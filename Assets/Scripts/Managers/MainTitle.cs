@@ -16,7 +16,16 @@ public class MainTitle : MonoBehaviour {
 	}
 
 	public void play () {
-		SceneManager.LoadScene ("HistoryScene");
+		if (PlayerPrefs.GetString ("nickname") == null || PlayerPrefs.GetString ("nickname").Equals ("")) {
+			Debug.Log (PlayerPrefs.GetString ("nickname"));
+			SceneManager.LoadScene ("NicknameScene");
+		} else {
+			if (PlayerPrefs.GetInt ("tutorialDone") == 1) {
+				SceneManager.LoadScene ("ShipScene");
+			} else {
+				SceneManager.LoadScene ("HistoryScene");
+			}
+		}
 	}
 	
 }
