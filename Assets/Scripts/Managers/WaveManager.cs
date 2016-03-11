@@ -43,7 +43,9 @@ public class WaveManager : MonoBehaviour {
 					position = Random.Range (0, 4);
 				} while (positionsSelected[position] == true);
 				positionsSelected [position] = true;
-				Instantiate (zombies[wave.types[j]], zombiesRespawns [position].position, Quaternion.identity);
+
+				respawnZombieByTyeInLayerOrder (wave.types [j], position);
+
 			}
 			yield return new WaitForSeconds(wave.intervalTime);
 		}
@@ -57,6 +59,13 @@ public class WaveManager : MonoBehaviour {
 				Destroy (this.gameObject);
 			}
 		}
+	}
+
+	private void respawnZombieByTyeInLayerOrder (int type, int position){
+
+		Zombie zombieRespawned;
+		zombieRespawned = Instantiate (zombies[type], zombiesRespawns [position].position, Quaternion.identity) as Zombie;
+		zombieRespawned.GetComponent<SpriteRenderer> ().sortingOrder = position;
 	}
 
 	private Transform selectRespawnPosition (bool[] positionsSelected) {
